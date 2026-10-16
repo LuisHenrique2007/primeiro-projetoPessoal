@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <h1><img src="https://images.tcdn.com.br/img/img_prod/1376235/bola_futebol_campo_classica_3301_1_1b76f93296b33910dd1d7b4c4d636ee3.jpg" width="2%">LÁ MUNDO</h1>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzprJ8smjjvXsOH8QwDyZeMccIGDyWf8OVgVluEzmqI4BI4gxps3A6Ts&s=10" alt="">
+    <p>Por que você tinha que me acordar?!</p>
+    <p name="Sopro">Eu sou leve como uma pluma, mas mesmo a pessoa mais forte não consegue me segurar por muito tempo. Quem sou eu?</p>
+    <form action="finalFase.html">
+        <input type="text">
+        <button type="submit">responder</button>
+    </form>
+    <img src="https://img.magnific.com/vetores-gratis/lampada-iluminada-realista-isolada_1284-41774.jpg?semt=ais_hybrid&w=740&q=80" width="5%">
+    <img src="https://img.cdndsgni.com/preview/12746502.jpg" width="5%">
+    <button><img src="https://dcu3z7fnvhgqn.cloudfront.net/Custom/Content/Products/12/96/12965_conjunto-interruptor-simples-branco-com-placa-4x2-inova-pro-p8674981_m184_639268152302158980.webp" width="4%"></button>
+    <div style="overflow-x: auto;">
+    <button type="button" id="direita" style="position: absolute; right: 40%; top: 50%;"> &gt; </button>
+    <button type="button" id="esquerda" style="position: absolute; right: 50%; top: 50%;"> &lt; </button>
+</div> 
+<script>
+    const container = document.getElementById('scrollContainer');
+    const botaoD = document.getElementById('direita');
+    const botaoE = document.getElementById('esquerda');
+
+    botaoD.addEventListener('click', () => {
+        container.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    botaoE.addEventListener('click', () => {
+        container.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+</script>
+</html>

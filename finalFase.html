@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puzzle</title>
+</head>
+<body>
+     <div id="scrollContainer" style="overflow-x: auto;">   
+    <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/16667886-broto-verde-no-solo-em-um-fundo-branco-ilustracao-em-de-uma-planta-jovem-mudas-de-feijao-em-estilo-cartoon-vetor.jpg" name="broto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6YQb_m3-PaR2x1uitpvogDjmC24Q4B_Jt6I0SuogNwxgdwgJyxC6g94&s=10" name="balde">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4PUDciNgrZQmEpTPZDoeay16PcgjR1vWCDa1Ptt2V7gcG3hqC_QV7YED&s=10" name="balde com água">
+        <select>
+            <option value="">
+                azul
+            </option>
+            <option value="">
+                branco
+            </option>
+            <option value="">
+                vermelho
+            </option>
+            <option value="">
+                preto
+            </option>
+        </select>
+        <div name="vermelho">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs726jonC3AwtmHAmgUuA3qQz1a_u739_e8tOZ6U6oQo7jdN8gB-waHXwz&s=10" name="boss">
+        </div>
+        <div name="azul">
+            <img src="https://thumbs.dreamstime.com/b/barco-de-madeira-isolado-no-branco-13022237.jpg" name="barco">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdy3SAroi0YeHnUZzbQM3QvrG8tbdWYgSSJdhpqw5ZZtfsz0Z7tuAX5Ys&s=10" name="barco grande">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC2e5pIy_vqqkddR3JVI2G5l4t4ayNGMEF2a6RQWOlrBibQTfFZADs8-o&s=10" name="baú">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/75546325-piranha-peixe-com-afiado-dentes-e-largo-sorriso-desenho-animado-ilustracao-vetor.jpg" name="piranha">
+        </div>
+        <div name="preto">
+            <img src="https://www.shutterstock.com/image-illustration/black-cat-red-eyes-glowing-260nw-326798009.jpg" name="olhos">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSsyFSb02WW5fY_fPKIPXd8gx4DCketnM_ALw5GJ-eLnxiKAMLTa1Hd68&s=10" alt="">
+        </div>
+        <div name="item">
+            <img src="https://thumb.wikimedia.org/wikipedia/pt/thumb/8/8b/EscudoDoVascoDaGama.svg/960px-EscudoDoVascoDaGama.svg.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail" name="vasco">
+            <img src="https://cdn.awsli.com.br/2500x2500/212/212554/produto/42399938/2-j0bjeyapoh.jpg" name="pau">
+        </div>
+        <img src="https://cdn.awsli.com.br/19/19830/produto/19474218/06eaafc6bb.jpg" name="lixo">
+        <a href="https://www.youtube.com/watch?v=e4Ez99gCOiY"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXam94WHeu_XQVQORDRD745pd390SGlIuIemImzC17mbvHwMWAvybXss&s=10"></a>
+       
+  <p>
+    teste: mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+  </p>
+<button type="button" id="direita" style="position: absolute; right: 40%; top: 50%;"> &gt; </button>
+<button type="button" id="esquerda" style="position: absolute; right: 50%; top: 50%;"> &lt; </button>
+</div> 
+<script>
+    const container = document.getElementById('scrollContainer');
+    const botaoD = document.getElementById('direita');
+    const botaoE = document.getElementById('esquerda');
+
+    botaoD.addEventListener('click', () => {
+        container.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    botaoE.addEventListener('click', () => {
+        container.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+</script>
+</body>
+        
+</html>
